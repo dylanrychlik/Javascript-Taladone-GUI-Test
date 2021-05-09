@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+<!--Normalise -->       
+	 <!--  <link type="text/css" rel="stylesheet" href="normalize.css"> -->    
+		<link type="text/css" rel="stylesheet" href="style.css">
+        <title>Taladone</title>
+		
+    </head>
+     
+          <header>
+		   
+		     <h1> Your house in Davenrun </h1>
+		    
+		  </header>
+		    <body style="font-size: 10pt;font-family: Courier New;background-color: rgb(170, 120, 57);">
+		     
+        <div class = "left">
+		<div class = "quest_log">
+            <textarea id="quest_log" name="quest_log" style="width:400px; height: 250px;" rows="4" cols="50">
+             Quests:
+              You currently have no quests 
+            </textarea>
+		</div>
+        <div class = "minimap">
+            <textarea id="minimap" name="minimap"  style="width:400px; height: 300px;" rows="4" cols="50">
+                minimap
+            </textarea>
+		</div>
+			</div>
+		<div class = "right">
+		 
+            <div class = "prompt">
+                <textarea id="location" name="prompt"  style="width:400px; height: 300px;" rows="4" cols="50">
+                    Your house is in the town of Davenrun, in the center of the great mysterious island on the Irish sea. The year is 1215. Davenrun is the flesh and blood of Talendone,the mysterious island that rules this land. The island is where adventurers like yourself can go to escape the harsh realities of life. There are rumors of creatures that are thought to be tales told to us when we kids. The island would be a punishment where sinful men go to die, but it is a haven of adventure and opportunity if you are willing to risk everything, even your life to do so. As you walk outside, you are ready to explore your new home. 
+                   
+                    You came from a land form away from Talendone. You were picked on in your youth and considered weak. When your wife left you, you knew deep down, there was nothing left for you, so you packed all you could carried and went on a crowded ship to talendone. This is your new life and now you must make use of it, for you are an adventurer... Or a fool. That is a faith that is up to you for decide.You are at the most Northern part of the town. You can either go south, west, or east. You notice a group of five people standing in your neighborhood. 
+                   
+                    What would like you to do?
+                </textarea>
+            </div>
+            <div class = "main_game">
+                <table>
+                    <tr>
+                        <th> <Button class="go_inside" id = "go_inside"> Go inside </button> </th>
+                        <th> <Button class="go_south" id = "go_south"> Go south </button> </th>
+                        <th> <Button class="go_west" id = "go_west"> Go west </button></th>
+                        <th> <Button class="go_east" id = "go_east">  Go east </button></th>
+                    </tr>
+                    <tr>
+                        <th><form action="">
+                            <label for="inventory">Inventory:</label>
+                            <select name="inventory" id="inventory">
+                              <option value="good_items"  id="good_items">good list</option>
+                              <option value="weapon_items"  id="weapon_items">weapons</option>
+                              <option value="armor_items"  id="armor_items">armor</option>
+                            </select>
+                            <br><br>
+                            <button name="Submit_inventory" type="button"id="Submit_inventory">Submit</button>
+                          
+                          </form></th>
+                        <th><form action="">
+                            <label for="interaction">Interact with a character:</label>
+                            <select name="character" id="character">
+                              <option value="Steve_Helderhan"  id="Steve_Helderhan">Steve Helderhan</option>
+                              <option value="unknown_person" id="unknown_person">unknown person</option>
+                              <option value="Adrian_holderson" id="Adrian_holderson">Adrian Holderson</option>
+                              <option value="Joel_Orion" id="Joel_Orion">Joel Orion</option>
+                              <option value="Nigel_Williams" id="Nigel_Williams">Nigel Williams</option>
+                            </select>
+                            <br><br>
+                         
+                            <button name="Submit_character" type="button"id="Submit_character">Submit</button>
+                          </form></th>
+                        <th><Button class="player_stats" id = "player_stats"> Player stats </button></th>
+                        </tr>
+                    </div>
+                  
+          </div>
+          <div class = "results">
+            <textarea id="results" name="results" style="width:400px; height: 300px;" rows="4" cols="50">
+               
+            </textarea>
+            <div class = "interactions" id="interactions">  
+                   <p> Type option for character interaction</p>
+                <input type="text" id="interaction"  style="width:50px;" name="interaction"><br><br>
+                <input type="submit" id="interactionSubmit" value="Submit"> 
+            </div>
+        </div>
+      
+         
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+      
+		</body>
+</html>
